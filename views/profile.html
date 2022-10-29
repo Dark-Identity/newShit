@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/profile.css">
+    <title>Profile</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script defer src="../../js/ondex2.js"></script>
+    <script defer src="../../js/trade.js"></script>
+    <script defer src="../../js/account.js"></script>
+    <!-- <script src="../js/home.js" charset="utf-8"></script> -->
+</head>
+
+<body>
+    <div class="outercantainer">
+        <!-- <div id="frist">
+            <nav id="fristarrow">
+                <
+            </nav>
+            <nav id="mypage">my page</nav>
+            <nav id="priv">privelges</nav>
+        </div> -->
+
+        <div id="secondcantainer">
+            <div class="secondcantainer">
+                <div id="sOne">
+                    <span><i>VIP 0</i></span>
+                    <p>Goluapradhi89</p>
+                </div>
+                <div id="wallet">
+                    <p class="wallet">Main wallet</p>
+                    <p>0.00</p>
+                </div>
+                <div id="trade">
+                    <span>
+                        <p class="trade">Unsettled Trade</p>
+                        <p>sh 0.00</p>
+                    </span>
+                    <span class="volume">
+                        <p id="volume">Volume</p>
+                        <p>sh 0.00</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="thirdcantainer">
+            <span id="deposit">
+                DEPOSIT
+            </span>
+            <span id="withdrawal">
+                WITHDRAWAL
+            </span>
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <div class="one" id="myBtn">
+                <p>INFO</p>
+            </div>
+            <div class="two" id="mybtn">
+                <p>TRADELIST</p>
+            </div>
+            <div class=" three" id="mybtn3">
+                <p>ACCOUNT<br>MANAGEMENT</p>
+            </div>
+            <div class="four" id="mybtn4">
+                <p>CS</p>
+            </div>
+            <div class="five" id="mybtn5">
+                <p>SETTING</p>
+            </div>
+            <div class="six" id="mybtn6">
+                <p>DOWNLOAD</p>
+            </div>
+            <div class="seven" id="mybtn7">GOOLOBAL<br>FOOTBALL</div>
+        </div>
+        <!-- <button id="myBtn">click me</button> -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <!-- <p>close</p> -->
+                <div class="outer">
+                    <div class="frist">
+                        <h2 class="close">
+                            < </h2>
+                                <h1>Info</h1>
+                    </div>
+                    <!-- name -->
+                    <div class="second">
+                        <div id="one">
+                            <p>Real Name</p>
+                            <p>Golu</p>
+                        </div>
+                        <div id="two">
+                            <p>Nickname</p>
+                            <p>Golu ></p>
+                        </div>
+                        <div id="third">
+                            <p>Login Password</p>
+                            <p><input type="password" value="1257845"> > </p>
+                        </div>
+                        <div id="four">
+                            <p class="withdrwal">Withdrawal Code</p>
+                            <p><input type="password" value="1258575"> > </p>
+                        </div>
+                        <div id="five">
+                            <p class="phone">Phone Number</p>
+                            <p id="phone">9304411522</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- tradeinear-->
+        <div id="Modaltrade" class="myModal">
+            <div class="modelContent">
+                <div class="tradeinear">
+                    <h2 id="closetwo">
+                        < </h2>
+                            <p id="tradetwo">Trade List</p>
+                            <p id="tradethree">Instructions</p>
+                </div>
+                <div class="tradeinear2">
+                    <p>deposit</p>
+                    <p>Withdrawal</p>
+                </div>
+            </div>
+        </div>
+        <!-- Account management -->
+        <div class="modalthree" id="modalthree">
+            <div class="accounthead">
+                <p id="closethree">
+                    < </p>
+                        <p id="card">Add Card</p>
+            </div>
+        </div>
+        <!-- customer services -->
+        <div id="modalfour" class="modalfour">
+            <div class="cs">
+                <h3 id="closefour"> < </h3>
+                        <p>CS</p>
+            </div>
+        </div>
+        <div id="modalfive" class="modalfive">
+            <div class="setting">
+                <h3 id="closefive"><</h3>
+                <p>SETTING</p>
+            </div>
+            <div class="version">
+                <span>version</span>
+                <span>v1.0.0</span>
+            </div>
+            <div class="logout">
+                <span>Logout</span>
+            </div>
+        </div>
+        <div id="modalsix" class="modalsix">
+            <div class="download">
+                <h3 id="closesix"> < </h3>
+                        <p>Download</p>
+            </div>
+        </div>
+        <!-- seven modal -->
+        <div id="modalseven" class="modalsix">
+            <div class="events">
+                <h3 id="closeseven"> < </h3>
+                        <p>events</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="depost">
+      <div class="deposit_top">
+        <div class="user_info">
+          <i class="fa-regular fa-user"></i>
+          <span>Hey there</span>
+        </div>
+      </div>
+      <div class="deposit_inputs">
+
+      </div>
+      <div class="deposit_bottom">
+
+      </div>
+    </section>
+    <section id="withdrw">
+
+    </section>
+
+    <script>
+        var modalfour = document.getElementById("modalfour");
+        var btnfour = document.getElementById("mybtn4");
+        var closefour = document.getElementById("closefour");
+
+        btnfour.onclick = function () {
+            modalfour.style.display = "block";
+        }
+        closefour.onclick = function () {
+            modalfour.style.display = "none";
+        }
+        // modal five popup
+        var modalfive = document.getElementById("modalfive");
+        var btnfive = document.getElementById("mybtn5");
+        var closefive = document.getElementById("closefive");
+
+        btnfive.onclick = function () {
+            modalfive.style.display = "block";
+        }
+        closefive.onclick = function () {
+            modalfive.style.display = "none";
+        }
+
+       //////////////////////////////////
+        //   modal six  //
+
+        var modalsix = document.getElementById("modalsix");
+        var btnsix = document.getElementById("mybtn6");
+        var closesix = document.getElementById("closesix");
+
+        btnsix.onclick = function () {
+            modalsix.style.display = "block";
+        }
+        closesix.onclick = function () {
+            modalsix.style.display = "none";
+        }
+        ///////////////////////////////
+        // modal seven //
+        var modalseven = document.getElementById("modalseven");
+        var btnseven = document.getElementById("mybtn7");
+        var closeseven = document.getElementById("closeseven");
+
+        btnseven.onclick = function () {
+            modalseven.style.display = "block";
+        }
+        closeseven.onclick = function () {
+            modalseven.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
